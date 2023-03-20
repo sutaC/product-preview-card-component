@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    font-family: Montserrat;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: Fraunces;
+}
+
+.lite-text {
+    opacity: 0.6;
+}
+
+p {
+    font-size: 14px
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    margin: 0;
+
+    background-color: hsl(30, 38%, 92%);
+}
+
+main {
+    display: flex;
+    
+    width: clamp(40%, 35rem, 90%);
+    height: clamp(40%, 25rem, 100%);
+
+    border-radius: 15px;
+
+    background-color: white;
+}
+
+
+main img {
+    width: clamp(50%, 25rem, 100%);
+    
+    object-fit: cover;
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+
+.advertisment {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 1rem;
+
+    width: clamp(50%, 25rem, 100%);
+
+    border-radius: 15px;
+
+    background-color: white;
+}
+
+.advertisment > * {
+    width: 80%;
+}
+
+
+.heading {
+    letter-spacing: 0.5rem;
+}
+
+
+.price {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.price h2 {
+    color: hsl(158, 36%, 37%);
+}
+
+.price p {
+    text-decoration: line-through;
+}
+
+
+.purchase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    height: 3rem;
+
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    outline: none;
+}
+
+.purchase img {
+    width: 1rem
+}
+
+.purchase:active {
+    background-color:  hsl(212, 21%, 14%);
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    color: hsl(228, 45%, 44%);
+    font-size: 11px; 
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 376px) {
+    main{
+        flex-direction: column;
+    }
+
+    main img {
+        max-height: 18rem;
+
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+}
